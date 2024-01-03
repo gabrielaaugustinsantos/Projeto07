@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de Programação IV</title>
+</head>
+<body>
+    <h1>Lista de Veículos</h1>
+    <hr>
+    <a href="/formveiculos">Inserir Veículos</a>
+    <table border="1">
+        <tr>
+            <th>Placa</th>
+            <th>Modelo</th>
+            <th>Marca</th>
+            <th>Ano de Fabricação</th>
+        </tr>
+        <%
+        veiculos.forEach((v, index) => {
+        %>
+        <tr>
+            <td><%= v.placa %></td>
+            <td><%= v.modelo %></td>
+            <td><%= v.marca %></td>
+            <td><%= v.ano_fabricacao %></td>
+        </tr>
+        <%
+        })
+        %>
+    </table>
+</body>
+</html>
